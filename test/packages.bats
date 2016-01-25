@@ -3,7 +3,7 @@
 load ./test_helper
 
 image_name="azukiapp/dig"
- image_tag="0.2.0"
+ image_tag="0.3.0"
 image="${image_name}:${image_tag}"
 
 bind_version="9.10.3"

@@ -12,11 +12,11 @@ all: build test
 
 build:
 	${DOCKER} build -t ${IMAGE_NAME} .
-	${DOCKER} build -t ${IMAGE_NAME}:0.2.0 .
+	${DOCKER} build -t ${IMAGE_NAME}:0.3.0 .
 
 build-no-cache:
 	${DOCKER} build --rm --no-cache -t ${IMAGE_NAME} .
-	${DOCKER} build --rm --no-cache -t ${IMAGE_NAME}:0.2.0 .
+	${DOCKER} build --rm --no-cache -t ${IMAGE_NAME}:0.3.0 .
 
 test: bats
 
