@@ -14,9 +14,10 @@ bind_version="9.10.3"
   assert_match "bind-tools-${bind_version}"
 }
 
-@test "should 'nslookup' version" {
-  run ${DOCKER} run ${image} nslookup -v
+@test "should 'nslookup' bin path" {
+  run ${DOCKER} run ${image} which nslookup
   assert_success
+  assert_match "/usr/bin/nslookup"
 }
 
 @test "should 'dig' version" {
