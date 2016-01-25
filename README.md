@@ -1,4 +1,4 @@
-[azukiapp/internal-services](http://images.azk.io/#/internal-services)
+[azukiapp/dig](http://images.azk.io/#/dig)
 ==================
 
 Docker image (based in alpine) for test dns configurations, include: `dig`, `nslookup` and `nsupdate` tools.
@@ -20,18 +20,16 @@ $ azk shell --image=azukiapp/dig -- dig google.com
 ###### Image content:
 
   - [bash][bash]
-  - dig
   - [drill][drill] (alpine alternative to dig)
+  - dig
   - nslookup
   - nsupdate
 
 ## License
 
-"Azuki", "azk" and the Azuki logo are copyright (c) 2013-2015 Azuki Serviços de Internet LTDA.
+Azuki Dockerfiles distributed under the [Apache License][license].
 
-**azk** source code is released under Apache 2 License.
+[license]: https://github.com/azukiapp/docker-dig/blob/master/LICENSE
 
-[azk]: https://github.com/azukiapp/azk
-[azk_agent_doc]: http://docs.azk.io/en/agent/
 [bash]: https://www.gnu.org/software/bash/
 [drill]: http://wiki.alpinelinux.org/wiki/Configure_Networking#drill
