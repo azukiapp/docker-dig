@@ -10,6 +10,6 @@ RUN packages=' \
     drill \
     bind-tools \
   ' \
-  set +x \
+  set -x \
   && apk --update add $packages \
   && rm -rf /var/cache/apk/*
