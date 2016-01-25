@@ -28,6 +28,16 @@ drill_version="1.6.17"
   assert_match "drill version ${drill_version}"
 }
 
+@test "should `nslookup` version" {
+  run ${DOCKER} run ${image} nslookup -v
+  assert_success
+}
+
+@test "should `dig` version" {
+  run ${DOCKER} run ${image} dig -v
+  assert_success
+}
+
 @test "cache is empty" {
   run ${DOCKER} run ${image} sh -c "ls -1 /var/cache/apk | wc -l"
   assert_success
