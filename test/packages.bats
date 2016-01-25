@@ -8,31 +8,31 @@ image="${image_name}:${image_tag}"
 
 bind_version="9.10.3"
 
-@test "should `bind-tools` intalled" {
+@test "should 'bind-tools' intalled" {
   run ${DOCKER} run ${image} apk info -v
   assert_success
   assert_match "bind-tools-${bind_version}"
 }
 
-@test "should `nslookup` version" {
+@test "should 'nslookup' version" {
   run ${DOCKER} run ${image} nslookup -v
   assert_success
 }
 
-@test "should `dig` version" {
+@test "should 'dig' version" {
   run ${DOCKER} run ${image} dig -v
   assert_success
 }
 
 drill_version="1.6.17"
 
-@test "should `drill` intalled" {
+@test "should 'drill' intalled" {
   run ${DOCKER} run ${image} apk info -v
   assert_success
   assert_match "drill-${drill_version}"
 }
 
-@test "should `drill` version" {
+@test "should 'drill' version" {
   run ${DOCKER} run ${image} drill -v
   assert_success
   assert_match "drill version ${drill_version}"
