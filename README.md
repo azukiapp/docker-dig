@@ -3,6 +3,10 @@
 
 Docker image (based in alpine) for test dns configurations, include: `dig`, `nslookup` and `nsupdate` tools.
 
+[![Circle CI](https://circleci.com/gh/azukiapp/docker-dig.svg?style=svg)][circle-ci]
+[![ImageLayers Size](https://img.shields.io/imagelayers/image-size/azukiapp/dig/latest.svg?style=plastic)][imageslayers]
+[![ImageLayers Layers](https://img.shields.io/imagelayers/layers/azukiapp/dig/latest.svg?style=plastic)][imageslayers]
+
 ###### Versions:
 
 <versions>
@@ -29,6 +33,8 @@ $ azk shell --image=azukiapp/dig -- dig google.com
 
 Azuki Dockerfiles distributed under the [Apache License][license].
 
+[circle-ci]: https://circleci.com/gh/azukiapp/docker-dig
+[imageslayers]: https://imagelayers.io/?images=azukiapp/dig:latest
 [license]: https://github.com/azukiapp/docker-dig/blob/master/LICENSE
 
 [bash]: https://www.gnu.org/software/bash/
