@@ -4,7 +4,7 @@ MAINTAINER Azuki <support@azukiapp.com>
 # install default packages
 RUN packages=' \
     bash \
-    bind-libs \
+    bind \
     drill \
   ' \
   set -x \
