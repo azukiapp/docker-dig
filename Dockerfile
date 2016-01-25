@@ -5,6 +5,7 @@ MAINTAINER Azuki <support@azukiapp.com>
 RUN packages=' \
     bash \
     bind-libs \
+    drill \
   ' \
   set -x \
   && apk --update add $packages \

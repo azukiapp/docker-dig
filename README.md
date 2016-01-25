@@ -21,6 +21,7 @@ $ azk shell --image=azukiapp/dig -- dig google.com
 
   - [bash][bash]
   - dig
+  - [drill][drill] (alpine alternative to dig)
   - nslookup
   - nsupdate
 
@@ -33,3 +34,4 @@ $ azk shell --image=azukiapp/dig -- dig google.com
 [azk]: https://github.com/azukiapp/azk
 [azk_agent_doc]: http://docs.azk.io/en/agent/
 [bash]: https://www.gnu.org/software/bash/
+[drill]: http://wiki.alpinelinux.org/wiki/Configure_Networking#drill
