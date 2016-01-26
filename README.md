@@ -11,7 +11,7 @@ Docker image (based in alpine) for test dns configurations, include: `dig`, `nsl
 
 <versions>
 - [`latest`](https://github.com/azukiapp/docker-dig/blob/master/Dockerfile)
-- [`0.2.0`](https://github.com/azukiapp/docker-dig/blob/0.2.0/Dockerfile)
+- [`0.3.0`](https://github.com/azukiapp/docker-dig/blob/0.3.0/Dockerfile)
 </versions>
 
 ### Usage with `azk`
